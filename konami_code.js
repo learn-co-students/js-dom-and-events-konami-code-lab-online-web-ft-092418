@@ -7,8 +7,9 @@ function onKeyDownHandler(e){
 
   if (key === code[index]) {
     index++
+    console.log(key)
 
-    if (index === (code.length)) {
+    if (index === code.length) {
       alert("konamiiiiiiiii")
 
       index = 0
@@ -22,3 +23,5 @@ function init() {
   document.addEventListener('keydown', onKeyDownHandler)
 
 }
+
+init()
